@@ -1,6 +1,6 @@
 {
   "name": "pocketbase-import",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pocketbase Import CLI for CSV Files",
   "bin": "./index.js",
   "main": "index.js",
