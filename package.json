@@ -13,6 +13,10 @@
     "csv",
     "import"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/3n3a/pocketbase-import.git"
+  },
   "author": "3n3a",
   "license": "ISC",
   "dependencies": {
