@@ -1,7 +1,8 @@
 {
-  "name": "pb-import-csv",
+  "name": "pocketbase-import",
   "version": "1.0.0",
-  "description": "Pocketbase Import CSV Files",
+  "description": "Pocketbase Import CLI for CSV Files",
+  "bin": "./index.js",
   "main": "index.js",
   "type": "module",
   "scripts": {
