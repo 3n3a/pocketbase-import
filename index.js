@@ -78,9 +78,21 @@ async function parseCSVFile(filePath) {
 
 // read csv
 let result = await parseCSVFile(FILE);
+if (DEBUG) console.log(result)
 
-if (result.length > 0) {
+if (result.length === 0) {
 	console.log("no entries in csv file")
+	process.exit()
+}
+
+// collection exists
+let exists = false
+try {
+	await pb.collections.getFirstListItem("name = " + options.collection)
+	exists = true
+} catch(e) {
+	if (DEBUG) console.log(e)
+	console.error('collection \"' + options.collection + '\" was not found')
 	process.exit()
 }
 
