@@ -1,7 +1,13 @@
 # pocketbase import csv
 
+## installation
+
+```sh
+npm i pocketbase-import
+```
+
 ## usage
 
 ```sh
-pb-import-csv -c <collection> -f ./<file>.csv
+pocketbase-import -c <collection> -f ./<file>.csv
 ``` 
