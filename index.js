@@ -6,7 +6,7 @@ import fs from "fs";
 import csvParser from "csv-parser";
 import 'dotenv/config'
 
-const DEBUG = false;
+const DEBUG = true;
 
 /*** CLI ***/
 program
@@ -88,7 +88,7 @@ if (result.length === 0) {
 // collection exists
 let exists = false
 try {
-	await pb.collections.getFirstListItem("name = " + options.collection)
+	await pb.collections.getOne(options.collection)
 	exists = true
 } catch(e) {
 	if (DEBUG) console.log(e)
