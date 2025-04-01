@@ -1,6 +1,6 @@
 {
   "name": "pocketbase-import",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A CLI tool for importing CSV data into PocketBase collections with authentication support.",
   "keywords": [
     "pocketbase",
