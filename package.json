@@ -1,18 +1,27 @@
 {
   "name": "pocketbase-import",
-  "version": "1.0.2",
-  "description": "Pocketbase Import CLI for CSV Files",
-  "bin": "./index.js",
+  "version": "1.0.3",
+  "description": "A CLI tool for importing CSV data into PocketBase collections with authentication support.",
+  "keywords": [
+    "pocketbase",
+    "csv",
+    "import",
+    "cli",
+    "database",
+    "data-import",
+    "pocketbase-cli",
+    "csv-parser",
+    "automation",
+    "bulk-insert"
+  ],
+  "bin": {
+    "pocketbase-import": "index.js"
+  },
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "pocketbase",
-    "csv",
-    "import"
-  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/3n3a/pocketbase-import.git"
@@ -20,9 +29,9 @@
   "author": "3n3a",
   "license": "ISC",
   "dependencies": {
-    "commander": "^12.0.0",
-    "csv-parser": "^3.0.0",
-    "dotenv": "^16.4.5",
-    "pocketbase": "^0.21.2"
+    "commander": "^13.1.0",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7",
+    "pocketbase": "^0.25.2"
   }
 }
